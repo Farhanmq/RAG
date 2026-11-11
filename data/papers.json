@@ -1,0 +1,752 @@
+[
+ {
+  "id": "2309.01431",
+  "title": "Benchmarking Large Language Models in Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2406.16167",
+  "title": "FS-RAG: A Frame Semantics Based Approach for Improved Factual Accuracy in Large Language Models",
+  "heldout": false
+ },
+ {
+  "id": "2403.01616",
+  "title": "Towards Comprehensive Vietnamese Retrieval-Augmented Generation and Large Language Models",
+  "heldout": false
+ },
+ {
+  "id": "2607.01852",
+  "title": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts",
+  "heldout": false
+ },
+ {
+  "id": "2409.15815",
+  "title": "AsthmaBot: Multi-modal, Multi-Lingual Retrieval Augmented Generation For Asthma Patient Support",
+  "heldout": false
+ },
+ {
+  "id": "2501.00562",
+  "title": "An Overview and Discussion on Using Large Language Models for Implementation Generation of Solutions to Open-Ended Problems",
+  "heldout": false
+ },
+ {
+  "id": "2411.00437",
+  "title": "E2E-AFG: An End-to-End Model with Adaptive Filtering for Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2405.13002",
+  "title": "DuetRAG: Collaborative Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2501.04425",
+  "title": "End-to-End Bangla AI for Solving Math Olympiad Problem Benchmark: Leveraging Large Language Model Using Integrated Approach",
+  "heldout": false
+ },
+ {
+  "id": "2411.18583",
+  "title": "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2603.04647",
+  "title": "Coordinated Semantic Alignment and Evidence Constraints for Retrieval-Augmented Generation with Large Language Models",
+  "heldout": false
+ },
+ {
+  "id": "2408.08535",
+  "title": "CommunityKG-RAG: Leveraging Community Structures in Knowledge Graphs for Advanced Retrieval-Augmented Generation in Fact-Checking",
+  "heldout": true
+ },
+ {
+  "id": "2604.18509",
+  "title": "MASS-RAG: Multi-Agent Synthesis Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2409.01864",
+  "title": "The Role of Large Language Models in Musicology: Are We Ready to Trust the Machines?",
+  "heldout": false
+ },
+ {
+  "id": "2511.01649",
+  "title": "Evaluating Cultural Knowledge Processing in Large Language Models: A Cognitive Benchmarking Framework Integrating Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2504.08748",
+  "title": "A Survey of Multimodal Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2407.03955",
+  "title": "Meta-prompting Optimized Retrieval-augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2405.19893",
+  "title": "Similarity is Not All You Need: Endowing Retrieval Augmented Generation with Multi Layered Thoughts",
+  "heldout": false
+ },
+ {
+  "id": "2509.21371",
+  "title": "ReGeS: Reciprocal Retrieval-Generation Synergy for Conversational Recommender Systems",
+  "heldout": false
+ },
+ {
+  "id": "2502.01113",
+  "title": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2508.15253",
+  "title": "Conflict-Aware Soft Prompting for Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2602.23184",
+  "title": "MTRAG-UN: A Benchmark for Open Challenges in Multi-Turn RAG Conversations",
+  "heldout": false
+ },
+ {
+  "id": "2607.24767",
+  "title": "The Effect of Text Chunk Size on Retrieval-Augmented Generation Performance",
+  "heldout": false
+ },
+ {
+  "id": "2509.10467",
+  "title": "DSRAG: A Domain-Specific Retrieval Framework Based on Document-derived Multimodal Knowledge Graph",
+  "heldout": true
+ },
+ {
+  "id": "2406.18122",
+  "title": "Poisoned LangChain: Jailbreak LLMs by LangChain",
+  "heldout": false
+ },
+ {
+  "id": "2505.18906",
+  "title": "Federated Retrieval-Augmented Generation: A Systematic Mapping Study",
+  "heldout": false
+ },
+ {
+  "id": "2605.24366",
+  "title": "Structure-Aware RAG: Structured Retrieval Augmented Generation from Noisy Data for Conversational Agents",
+  "heldout": false
+ },
+ {
+  "id": "2603.05698",
+  "title": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
+  "heldout": false
+ },
+ {
+  "id": "2411.06805",
+  "title": "AssistRAG: Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+  "heldout": false
+ },
+ {
+  "id": "2604.22061",
+  "title": "Lightweight Retrieval-Augmented Generation and Large Language Model-Based Modeling for Scalable Patient-Trial Matching",
+  "heldout": false
+ },
+ {
+  "id": "2311.17696",
+  "title": "How to Build an Adaptive AI Tutor for Any Course Using Knowledge Graph-Enhanced Retrieval-Augmented Generation (KG-RAG)",
+  "heldout": false
+ },
+ {
+  "id": "2507.07983",
+  "title": "Performance and Practical Considerations of Large and Small Language Models in Clinical Decision Support in Rheumatology",
+  "heldout": false
+ },
+ {
+  "id": "2409.10955",
+  "title": "Investigating Context-Faithfulness in Large Language Models: The Roles of Memory Strength and Evidence Style",
+  "heldout": false
+ },
+ {
+  "id": "2601.07054",
+  "title": "Fine-Tuning vs. RAG for Multi-Hop Question Answering with Novel Knowledge",
+  "heldout": false
+ },
+ {
+  "id": "2509.21336",
+  "title": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
+  "heldout": false
+ },
+ {
+  "id": "2511.03214",
+  "title": "LGM: Enhancing Large Language Models with Conceptual Meta-Relations and Iterative Retrieval",
+  "heldout": true
+ },
+ {
+  "id": "2308.00479",
+  "title": "Retrieval Augmented Generation and Representative Vector Summarization for large unstructured textual data in Medical Education",
+  "heldout": false
+ },
+ {
+  "id": "2408.04259",
+  "title": "EfficientRAG: Efficient Retriever for Multi-Hop Question Answering",
+  "heldout": false
+ },
+ {
+  "id": "2502.21107",
+  "title": "Generating patient cohorts from electronic health records using two-step retrieval-augmented text-to-SQL generation",
+  "heldout": false
+ },
+ {
+  "id": "2507.05714",
+  "title": "HIRAG: Hierarchical-Thought Instruction-Tuning Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2403.12077",
+  "title": "Evaluating Robustness of Generative Search Engine on Adversarial Factual Questions",
+  "heldout": false
+ },
+ {
+  "id": "2503.14649",
+  "title": "RAGO: Systematic Performance Optimization for Retrieval-Augmented Generation Serving",
+  "heldout": false
+ },
+ {
+  "id": "2502.06864",
+  "title": "Knowledge Graph-Guided Retrieval Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2504.12560",
+  "title": "CDF-RAG: Causal Dynamic Feedback for Adaptive Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2406.01549",
+  "title": "An Information Bottleneck Perspective for Effective Noise Filtering on Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2503.10150",
+  "title": "Retrieval-Augmented Generation with Hierarchical Knowledge",
+  "heldout": false
+ },
+ {
+  "id": "2605.30400",
+  "title": "Protocol for evaluating ChatGPT in biomedical association generation and verification using a RAG-enabled, cross-model majority voting workflow",
+  "heldout": false
+ },
+ {
+  "id": "2605.31010",
+  "title": "MoG: Mixture of Experts for Graph-based Retrieval-Augmented Generation",
+  "heldout": true
+ },
+ {
+  "id": "2412.15272",
+  "title": "SimGRAG: Leveraging Similar Subgraphs for Knowledge Graphs Driven Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2603.26046",
+  "title": "Retrieval-Augmented Generation Based Nurse Observation Extraction",
+  "heldout": false
+ },
+ {
+  "id": "2404.11216",
+  "title": "Position Engineering: Boosting Large Language Models through Positional Information Manipulation",
+  "heldout": false
+ },
+ {
+  "id": "2409.13707",
+  "title": "Retrieval Augmented Generation-Based Incident Resolution Recommendation System for IT Support",
+  "heldout": false
+ },
+ {
+  "id": "2407.21055",
+  "title": "Bailicai: A Domain-Optimized Retrieval-Augmented Generation Framework for Medical Applications",
+  "heldout": false
+ },
+ {
+  "id": "2305.06983",
+  "title": "Active Retrieval Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2510.01600",
+  "title": "A Comparison of Independent and Joint Fine-tuning Strategies for Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2412.12358",
+  "title": "BioRAGent: A Retrieval-Augmented Generation System for Showcasing Generative Query Expansion and Domain-Specific Search for Scientific Q&A",
+  "heldout": false
+ },
+ {
+  "id": "2411.12759",
+  "title": "A Novel Approach to Eliminating Hallucinations in Large Language Model-Assisted Causal Discovery",
+  "heldout": false
+ },
+ {
+  "id": "2507.16711",
+  "title": "Advancing Risk and Quality Assurance: A RAG Chatbot for Improved Regulatory Compliance",
+  "heldout": false
+ },
+ {
+  "id": "2512.18357",
+  "title": "DACE For Railway Acronym Disambiguation",
+  "heldout": false
+ },
+ {
+  "id": "2406.18134",
+  "title": "Assessing \"Implicit\" Retrieval Robustness of Large Language Models",
+  "heldout": true
+ },
+ {
+  "id": "2406.13249",
+  "title": "R^2AG: Incorporating Retrieval Information into Retrieval Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2411.09213",
+  "title": "Comprehensive and Practical Evaluation of Retrieval-Augmented Generation Systems for Medical Question Answering",
+  "heldout": false
+ },
+ {
+  "id": "2311.04177",
+  "title": "Enhancing LLM Intelligence with ARM-RAG: Auxiliary Rationale Memory for Retrieval Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2404.00610",
+  "title": "RQ-RAG: Learning to Refine Queries for Retrieval Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2506.20821",
+  "title": "MultiFinRAG: An Optimized Multimodal Retrieval-Augmented Generation (RAG) Framework for Financial Question Answering",
+  "heldout": false
+ },
+ {
+  "id": "2407.16565",
+  "title": "Retrieve, Generate, Evaluate: A Case Study for Medical Paraphrases Generation with Small Language Models",
+  "heldout": false
+ },
+ {
+  "id": "2506.09200",
+  "title": "FedRAG: A Framework for Fine-Tuning Retrieval-Augmented Generation Systems",
+  "heldout": false
+ },
+ {
+  "id": "2408.11189",
+  "title": "Emotional RAG LLMs: Reading Comprehension for the Open Internet",
+  "heldout": false
+ },
+ {
+  "id": "2505.22752",
+  "title": "Climate Finance Bench",
+  "heldout": false
+ },
+ {
+  "id": "2505.17503",
+  "title": "CReSt: A Comprehensive Benchmark for Retrieval-Augmented Generation with Complex Reasoning over Structured Documents",
+  "heldout": false
+ },
+ {
+  "id": "2507.10586",
+  "title": "AutoRAG-LoRA: Hallucination-Triggered Knowledge Retuning via Lightweight Adapters",
+  "heldout": false
+ },
+ {
+  "id": "2406.07257",
+  "title": "Scholarly Question Answering using Large Language Models in the NFDI4DataScience Gateway",
+  "heldout": true
+ },
+ {
+  "id": "2402.13178",
+  "title": "Benchmarking Retrieval-Augmented Generation for Medicine",
+  "heldout": false
+ },
+ {
+  "id": "2501.00332",
+  "title": "MAIN-RAG: Multi-Agent Filtering Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2508.03553",
+  "title": "MultiRAG: A Knowledge-guided Framework for Mitigating Hallucination in Multi-source Retrieval Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2412.14304",
+  "title": "Multi-OphthaLingua: A Multilingual Benchmark for Assessing and Debiasing LLM Ophthalmological QA in LMICs",
+  "heldout": false
+ },
+ {
+  "id": "2505.11626",
+  "title": "THELMA: Task Based Holistic Evaluation of Large Language Model Applications-RAG Question Answering",
+  "heldout": false
+ },
+ {
+  "id": "2407.08488",
+  "title": "Lynx: An Open Source Hallucination Evaluation Model",
+  "heldout": false
+ },
+ {
+  "id": "2510.17309",
+  "title": "RubiSCoT: A Framework for AI-Supported Academic Assessment",
+  "heldout": false
+ },
+ {
+  "id": "2601.04209",
+  "title": "Leveraging Language Models and RAG for Efficient Knowledge Discovery in Clinical Environments",
+  "heldout": false
+ },
+ {
+  "id": "2502.08178",
+  "title": "ParetoRAG: Leveraging Sentence-Context Attention for Robust and Efficient Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2505.20663",
+  "title": "TeroSeek: An AI-Powered Knowledge Base and Retrieval Generation Platform for Terpenoid Research",
+  "heldout": false
+ },
+ {
+  "id": "2508.19272",
+  "title": "RAGAPHENE: A RAG Annotation Platform with Human Enhancements and Edits",
+  "heldout": false
+ },
+ {
+  "id": "2601.13105",
+  "title": "Leveraging Lora Fine-Tuning and Knowledge Bases for Construction Identification",
+  "heldout": true
+ },
+ {
+  "id": "2506.13070",
+  "title": "CHILL at SemEval-2025 Task 2: You Can't Just Throw Entities and Hope -- Make Your LLM to Get Them Right",
+  "heldout": false
+ },
+ {
+  "id": "2412.14510",
+  "title": "PA-RAG: RAG Alignment via Multi-Perspective Preference Optimization",
+  "heldout": false
+ },
+ {
+  "id": "2605.14192",
+  "title": "Why Retrieval-Augmented Generation Fails: A Graph Perspective",
+  "heldout": false
+ },
+ {
+  "id": "2610.11899",
+  "title": "Forms of LLM-Integrated Applications from LLM-Chats to Autonomous AI Agent System",
+  "heldout": false
+ },
+ {
+  "id": "2411.14572",
+  "title": "Towards Knowledge Checking in Retrieval-augmented Generation: A Representation Perspective",
+  "heldout": false
+ },
+ {
+  "id": "2412.13720",
+  "title": "Federated Learning and RAG Integration: A Scalable Approach for Medical Large Language Models",
+  "heldout": false
+ },
+ {
+  "id": "2609.19634",
+  "title": "Scientific Image Quality Assessment via Multi-modal Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2609.37171",
+  "title": "Bridging Semantic Gaps in RAG through Generated Context Knowledge Fusion",
+  "heldout": false
+ },
+ {
+  "id": "2504.07738",
+  "title": "Automated Construction of a Knowledge Graph of Nuclear Fusion Energy for Effective Elicitation and Retrieval of Information",
+  "heldout": false
+ },
+ {
+  "id": "2407.01158",
+  "title": "Learning to Explore and Select for Coverage-Conditioned Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2401.15884",
+  "title": "Corrective Retrieval Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2407.12101",
+  "title": "Better RAG using Relevant Information Gain",
+  "heldout": true
+ },
+ {
+  "id": "2407.14246",
+  "title": "Unipa-GPT: Large Language Models for university-oriented QA in Italian",
+  "heldout": false
+ },
+ {
+  "id": "2402.11794",
+  "title": "Unveiling the Magic: Investigating Attention Distillation in Retrieval-augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2409.08597",
+  "title": "LA-RAG:Enhancing LLM-based ASR Accuracy with Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2511.15994",
+  "title": "CARE-RAG - Clinical Assessment and Reasoning in RAG",
+  "heldout": false
+ },
+ {
+  "id": "2506.21865",
+  "title": "RiverEcho: Real-Time Interactive Digital System for Ancient Yellow River Culture",
+  "heldout": false
+ },
+ {
+  "id": "2601.12945",
+  "title": "A Component-Based Survey of Interactions between Large Language Models and Multi-Armed Bandits",
+  "heldout": false
+ },
+ {
+  "id": "2410.16843",
+  "title": "Trustworthy Alignment of Retrieval-Augmented Large Language Models via Reinforcement Learning",
+  "heldout": false
+ },
+ {
+  "id": "2408.01084",
+  "title": "Adaptive Contrastive Decoding in Retrieval-Augmented Generation for Handling Noisy Contexts",
+  "heldout": false
+ },
+ {
+  "id": "2405.13008",
+  "title": "Control Token with Dense Passage Retrieval",
+  "heldout": false
+ },
+ {
+  "id": "2406.19493",
+  "title": "Development and Evaluation of a Retrieval-Augmented Generation Tool for Creating SAPPhIRE Models of Artificial Systems",
+  "heldout": false
+ },
+ {
+  "id": "2606.30062",
+  "title": "Little Brains, Big Feats: Exploring Compact Language Models",
+  "heldout": false
+ },
+ {
+  "id": "2605.14053",
+  "title": "Derivation Prompting: A Logic-Based Method for Improving Retrieval-Augmented Generation",
+  "heldout": true
+ },
+ {
+  "id": "2505.04253",
+  "title": "LLM-Independent Adaptive RAG: Let the Question Speak for Itself",
+  "heldout": false
+ },
+ {
+  "id": "2503.24307",
+  "title": "A Systematic Evaluation of LLM Strategies for Mental Health Text Analysis: Fine-tuning vs. Prompt Engineering vs. RAG",
+  "heldout": false
+ },
+ {
+  "id": "2602.03368",
+  "title": "Pursuing Best Industrial Practices for Retrieval-Augmented Generation in the Medical Domain",
+  "heldout": false
+ },
+ {
+  "id": "2608.06069",
+  "title": "Training-Free Token-Level Steering for LLM Personalized Co-Writing",
+  "heldout": false
+ },
+ {
+  "id": "2407.11638",
+  "title": "A Comprehensive Evaluation of Large Language Models on Temporal Event Forecasting",
+  "heldout": false
+ },
+ {
+  "id": "2510.17354",
+  "title": "Towards Mixed-Modal Retrieval for Universal Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2604.06211",
+  "title": "Illocutionary Explanation Planning for Source-Faithful Explanations in Retrieval-Augmented Language Models",
+  "heldout": false
+ },
+ {
+  "id": "2312.14211",
+  "title": "Experimenting with Large Language Models and vector embeddings in NASA SciX",
+  "heldout": false
+ },
+ {
+  "id": "2501.07523",
+  "title": "Parallel Key-Value Cache Fusion for Position Invariant RAG",
+  "heldout": false
+ },
+ {
+  "id": "2405.15007",
+  "title": "RE-Adapt: Reverse Engineered Adaptation of Large Language Models",
+  "heldout": false
+ },
+ {
+  "id": "2410.20878",
+  "title": "AutoRAG: Automated Framework for optimization of Retrieval Augmented Generation Pipeline",
+  "heldout": false
+ },
+ {
+  "id": "2602.16715",
+  "title": "Retrieval Augmented (Knowledge Graph), and Large Language Model-Driven Design Structure Matrix (DSM) Generation of Cyber-Physical Systems",
+  "heldout": true
+ },
+ {
+  "id": "2505.11271",
+  "title": "Semantic Caching of Contextual Summaries for Efficient Question-Answering with Language Models",
+  "heldout": false
+ },
+ {
+  "id": "2506.17951",
+  "title": "A Comprehensive Graph Framework for Question Answering with Mode-Seeking Preference Alignment",
+  "heldout": false
+ },
+ {
+  "id": "2604.03174",
+  "title": "Beyond the Parameters: A Technical Survey of Contextual Enrichment in Large Language Models: From In-Context Prompting to Causal Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2311.05169",
+  "title": "Large Language Models and Prompt Engineering for Biomedical Query Focused Multi-Document Summarisation",
+  "heldout": false
+ },
+ {
+  "id": "2407.12057",
+  "title": "NinjaLLM: Fast, Scalable and Cost-effective RAG using Amazon SageMaker and AWS Trainium and Inferentia2",
+  "heldout": false
+ },
+ {
+  "id": "2502.04347",
+  "title": "SCALM: Detecting Bad Practices in Smart Contracts Through LLMs",
+  "heldout": false
+ },
+ {
+  "id": "2503.13563",
+  "title": "MES-RAG: Bringing Multi-modal, Entity-Storage, and Secure Enhancements to RAG",
+  "heldout": false
+ },
+ {
+  "id": "2510.17924",
+  "title": "Efficient Toxicity Detection in Gaming Chats: A Comparative Study of Embeddings, Fine-Tuned Transformers and LLMs",
+  "heldout": false
+ },
+ {
+  "id": "2507.22931",
+  "title": "Enhancing RAG Efficiency with Adaptive Context Compression",
+  "heldout": false
+ },
+ {
+  "id": "2507.05279",
+  "title": "ReservoirChat: Interactive Documentation Enhanced with LLM and Knowledge Graph for ReservoirPy",
+  "heldout": false
+ },
+ {
+  "id": "2603.19251",
+  "title": "Enhancing Legal LLMs through Metadata-Enriched RAG Pipelines and Direct Preference Optimization",
+  "heldout": false
+ },
+ {
+  "id": "2407.01796",
+  "title": "Ground Every Sentence: Improving Retrieval-Augmented LLMs with Interleaved Reference-Claim Generation",
+  "heldout": true
+ },
+ {
+  "id": "2604.25924",
+  "title": "Generative AI-Based Virtual Assistant using Retrieval-Augmented Generation: An evaluation study for bachelor projects",
+  "heldout": false
+ },
+ {
+  "id": "2406.07348",
+  "title": "DR-RAG: Applying Dynamic Document Relevance to Retrieval-Augmented Generation for Question-Answering",
+  "heldout": false
+ },
+ {
+  "id": "2511.00489",
+  "title": "ToM: Leveraging Tree-oriented MapReduce for Long-Context Reasoning in Large Language Models",
+  "heldout": false
+ },
+ {
+  "id": "2403.10081",
+  "title": "DRAGIN: Dynamic Retrieval Augmented Generation based on the Information Needs of Large Language Models",
+  "heldout": false
+ },
+ {
+  "id": "2603.23972",
+  "title": "Grounding Arabic LLMs in the Doha Historical Dictionary: Retrieval-Augmented Understanding of Quran and Hadith",
+  "heldout": false
+ },
+ {
+  "id": "2310.11511",
+  "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+  "heldout": false
+ },
+ {
+  "id": "2509.04502",
+  "title": "VaccineRAG: Boosting Multimodal Large Language Models' Immunity to Harmful RAG Samples",
+  "heldout": false
+ },
+ {
+  "id": "2402.01364",
+  "title": "Continual Learning for Large Language Models: A Survey",
+  "heldout": false
+ },
+ {
+  "id": "2406.09979",
+  "title": "HIRO: Hierarchical Information Retrieval Optimization",
+  "heldout": false
+ },
+ {
+  "id": "2502.13019",
+  "title": "Oreo: A Plug-in Context Reconstructor to Enhance Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2502.01142",
+  "title": "DeepRAG: Thinking to Retrieve Step by Step for Large Language Models",
+  "heldout": false
+ },
+ {
+  "id": "2603.07931",
+  "title": "BRIDGE: Benchmark for multi-hop Reasoning In long multimodal Documents with Grounded Evidence",
+  "heldout": true
+ },
+ {
+  "id": "2601.11443",
+  "title": "Predict the Retrieval! Test time adaptation for Retrieval Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2504.19101",
+  "title": "Privacy-Preserving Federated Embedding Learning for Localized Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2508.08149",
+  "title": "REX-RAG: Reasoning Exploration with Policy Correction in Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2607.24817",
+  "title": "Retrieval-Augmented Generation in LLMs for Mental Health: Quantifying the Incremental Contribution of Retrieval Within a Layered Safety Architecture",
+  "heldout": false
+ },
+ {
+  "id": "2411.07773",
+  "title": "Pointwise Mutual Information as a Performance Gauge for Retrieval-Augmented Generation",
+  "heldout": false
+ },
+ {
+  "id": "2408.02545",
+  "title": "RAG Foundry: A Framework for Enhancing LLMs for Retrieval Augmented Generation",
+  "heldout": false
+ }
+]

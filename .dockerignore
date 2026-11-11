@@ -1,0 +1,6 @@
+.venv
+data/*
+!data/index
+results
+models
+.git

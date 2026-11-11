@@ -1,0 +1,18 @@
+services:
+  api:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      RAG_LLM_URL: http://host.docker.internal:11434/v1  # Ollama on the host (Docker on macOS has no GPU access)
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    volumes:
+      - ./data:/app/data:ro
+      - hf-cache:/cache
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      start_period: 120s  # first start downloads the embedding and reranker models
+    restart: unless-stopped
+
+volumes:
+  hf-cache:

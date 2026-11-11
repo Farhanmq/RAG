@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAG Knowledge Assistant</title>
+<style>
+  :root { --bg: #fafaf9; --fg: #1c1917; --muted: #78716c; --line: #e7e5e4; --accent: #2563eb; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #1c1917; --fg: #f5f5f4; --muted: #a8a29e; --line: #44403c; --accent: #60a5fa; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px; }
+  h1 { font-size: 1.5rem; margin: 0 } p.sub { color: var(--muted); margin: 4px 0 24px }
+  form { display: flex; gap: 8px }
+  input { flex: 1; min-width: 0; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: transparent; color: inherit; font: inherit }
+  button { padding: 10px 16px; border: 0; border-radius: 8px; background: var(--accent); color: #fff; font: inherit; cursor: pointer }
+  button:disabled { opacity: .5 }
+  #answer { white-space: pre-wrap; margin: 24px 0 }
+  ol { padding-left: 20px; color: var(--muted); font-size: .9rem } li.cited { color: var(--fg) }
+  a { color: var(--accent) }
+</style>
+</head>
+<body>
+<main>
+  <h1>RAG Knowledge Assistant</h1>
+  <p class="sub">Ask about 138 arXiv papers on LLMs and retrieval-augmented generation. Answers cite their sources.</p>
+  <form id="f">
+    <input id="q" placeholder="How does Self-RAG decide when to retrieve?" minlength="3" maxlength="1000">
+    <button>Ask</button>
+  </form>
+  <div id="answer"></div>
+  <ol id="sources"></ol>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+$("f").onsubmit = async e => {
+  e.preventDefault();
+  const button = e.target.querySelector("button");
+  button.disabled = true;
+  $("answer").textContent = "Searching…";
+  $("sources").innerHTML = "";
+  let sources = [], text = "";
+  try {
+    const res = await fetch("ask/stream", {
+      method: "POST", headers: {"content-type": "application/json"},
+      body: JSON.stringify({question: $("q").value || $("q").placeholder}),
+    });
+    if (!res.ok) throw new Error(`request failed (${res.status})`);
+    const reader = res.body.pipeThrough(new TextDecoderStream()).getReader();
+    let buf = "";
+    for (let r; !(r = await reader.read()).done;) {
+      const events = (buf += r.value).split("\n\n");
+      buf = events.pop();
+      for (const ev of events) {
+        const type = ev.match(/^event: (.*)/m)?.[1], data = JSON.parse(ev.match(/^data: (.*)/m)[1]);
+        if (type === "sources") sources = data;
+        else if (type === "error") throw new Error(data);
+        else if (!type) $("answer").textContent = (text += data).replaceAll("**", "");
+      }
+    }
+    const cited = new Set([...text.matchAll(/\[([\d,\s]+)\]/g)].flatMap(m => m[1].match(/\d+/g).map(Number)));
+    for (const s of sources) {
+      const li = document.createElement("li");
+      li.className = cited.has(s.n) ? "cited" : "";
+      li.innerHTML = `<a target="_blank" href="https://arxiv.org/abs/${s.paper}"></a> · `;
+      li.firstChild.textContent = s.title;
+      li.append(s.section);
+      $("sources").append(li);
+    }
+  } catch (err) {
+    $("answer").textContent = `Error: ${err.message}`;
+  }
+  button.disabled = false;
+};
+</script>
+</body>
+</html>

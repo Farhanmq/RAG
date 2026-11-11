@@ -1,0 +1,57 @@
+{
+  "retrieval": {
+    "fixed + dense (baseline)": {
+      "recall@1": 0.325,
+      "recall@5": 0.605,
+      "mrr@10": 0.43858928571428585
+    },
+    "structured + dense": {
+      "recall@1": 0.395,
+      "recall@5": 0.68,
+      "mrr@10": 0.5168214285714285
+    },
+    "structured + bm25": {
+      "recall@1": 0.575,
+      "recall@5": 0.825,
+      "mrr@10": 0.6831428571428568
+    },
+    "structured + hybrid": {
+      "recall@1": 0.45,
+      "recall@5": 0.81,
+      "mrr@10": 0.597878968253968
+    },
+    "structured + hybrid + rerank": {
+      "recall@1": 0.645,
+      "recall@5": 0.88,
+      "mrr@10": 0.7469722222222224
+    },
+    "fine-tuned + dense": {
+      "recall@1": 0.455,
+      "recall@5": 0.765,
+      "mrr@10": 0.5885694444444447
+    },
+    "fine-tuned + hybrid + rerank": {
+      "recall@1": 0.64,
+      "recall@5": 0.88,
+      "mrr@10": 0.7417757936507935
+    }
+  },
+  "generation": {
+    "fixed + dense (baseline)": {
+      "accuracy": 0.64,
+      "faithfulness": 0.890625,
+      "citation_validity": 0.90625,
+      "abstention_on_unanswerable": 0.92,
+      "false_refusal": 0.17333333333333334,
+      "latency_p50_s": 11.228962374501862
+    },
+    "fine-tuned + hybrid + rerank": {
+      "accuracy": 0.84,
+      "faithfulness": 0.9733333333333334,
+      "citation_validity": 0.96,
+      "abstention_on_unanswerable": 0.96,
+      "false_refusal": 0.013333333333333334,
+      "latency_p50_s": 11.471905041500577
+    }
+  }
+}
