@@ -10,6 +10,10 @@ RERANK_MODEL = os.getenv("RAG_RERANK_MODEL", "BAAI/bge-reranker-base")
 LLM_MODEL = os.getenv("RAG_LLM_MODEL", "qwen3:4b-instruct")
 LLM_URL = os.getenv("RAG_LLM_URL", "http://localhost:11434/v1")
 LLM_API_KEY = os.getenv("RAG_LLM_API_KEY", "unused")  # Ollama ignores it; hosted APIs need it
+# a stronger model writes the benchmark and grades answers, so the system under test never grades itself
+JUDGE_MODEL = os.getenv("RAG_JUDGE_MODEL", LLM_MODEL)
+JUDGE_URL = os.getenv("RAG_JUDGE_URL", LLM_URL)
+JUDGE_API_KEY = os.getenv("RAG_JUDGE_API_KEY", LLM_API_KEY)
 
 CHUNK_TOKENS = 320  # embedder tokens; leaves room for the title/section prefix within bge's 512 limit
 CHUNK_OVERLAP = 64

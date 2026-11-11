@@ -20,23 +20,30 @@ from rag.retrieve import QUERY_PROMPT
 PAIRS = DATA_DIR / "train_pairs.jsonl"
 
 
-def make_pairs(n):
+def banned_ids():
+    """Test chunks and their overlapping neighbours: never trained on, even if the test set was regenerated."""
     with open(DATA_DIR / "testset.jsonl") as f:
-        test_ids = {json.loads(line)["chunk_id"] for line in f} - {None}
-    banned = {i + d for i in test_ids for d in (-1, 0, 1)}
+        test_ids = {i for line in f for i in json.loads(line)["chunk_ids"]} - {None}
+    return {i + d for i in test_ids for d in (-1, 0, 1)}
+
+
+def make_pairs(n):
+    banned = banned_ids()
     with open(INDEX_DIR / "chunks.jsonl") as f:
         chunks = [c for line in f if (c := json.loads(line))["id"] not in banned and len(c["text"].split()) >= 100]
 
     with open(PAIRS, "w") as f:
         for i, c in enumerate(random.Random(1).sample(chunks, min(n, len(chunks)))):
             if qa := make_question(c):
-                f.write(json.dumps({"anchor": qa["question"], "positive": c["text"]}) + "\n")
+                f.write(json.dumps({"anchor": qa["question"], "positive": c["text"], "chunk_id": c["id"]}) + "\n")
             print(f"\r{i + 1}/{n}", end="")
 
 
 def train(out, epochs):
+    banned = banned_ids()
     with open(PAIRS) as f:
-        data = Dataset.from_list([json.loads(line) for line in f])
+        rows = [r for line in f if (r := json.loads(line)).pop("chunk_id") not in banned]
+    data = Dataset.from_list(rows)
     # MPS fused attention can't do attention dropout; turning just that off keeps it (eager attention used 14 GB)
     model = SentenceTransformer(EMBED_MODEL, config_kwargs={"attention_probs_dropout_prob": 0.0})
     model.max_seq_length = 384  # chunks are ~250 words

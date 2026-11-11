@@ -18,9 +18,9 @@ def prompt(question, chunks):
     return f"Sources:\n{sources}\n\nQuestion: {question}"
 
 
-def generate(question, chunks, model=LLM_MODEL):
+def generate(question, chunks, model=LLM_MODEL, min_score=MIN_RERANK_SCORE):
     """Stream the answer token by token. Refuses without calling the LLM when retrieval found nothing relevant."""
-    if not chunks or (chunks[0]["score"] is not None and chunks[0]["score"] < MIN_RERANK_SCORE):
+    if not chunks or (chunks[0]["score"] is not None and chunks[0]["score"] < min_score):
         yield REFUSAL
         return
     stream = client.chat.completions.create(
@@ -34,8 +34,8 @@ def generate(question, chunks, model=LLM_MODEL):
             yield delta
 
 
-def answer(question, chunks, model=LLM_MODEL):
-    return "".join(generate(question, chunks, model)).strip()
+def answer(question, chunks, **kwargs):
+    return "".join(generate(question, chunks, **kwargs)).strip()
 
 
 def citations(text):

@@ -24,9 +24,15 @@ HELDOUT_EVERY = 12  # every 12th paper is kept out of the index to test unanswer
 
 
 def download(n):
+    """Fetch the papers listed in papers.json (so every machine indexes the same corpus), or search arXiv for n."""
     PDF_DIR.mkdir(parents=True, exist_ok=True)
+    listed = DATA_DIR / "papers.json"
+    if listed.exists():
+        search = arxiv.Search(id_list=[p["id"] for p in json.loads(listed.read_text())])
+    else:
+        search = arxiv.Search(query=QUERY, max_results=n)
     papers = []
-    for r in arxiv.Client(delay_seconds=3, num_retries=5).results(arxiv.Search(query=QUERY, max_results=n)):
+    for r in arxiv.Client(delay_seconds=3, num_retries=5).results(search):
         pid = r.get_short_id().split("v")[0]
         path = PDF_DIR / f"{pid}.pdf"
         try:
@@ -38,8 +44,9 @@ def download(n):
             print(f"skipping {pid}: {e}")
             continue
         papers.append({"id": pid, "title": r.title, "heldout": len(papers) % HELDOUT_EVERY == HELDOUT_EVERY - 1})
-        print(f"{len(papers)}/{n} {r.title[:80]}")
-    (DATA_DIR / "papers.json").write_text(json.dumps(papers, indent=1))
+        print(f"{len(papers)} {r.title[:80]}")
+    if not listed.exists():
+        listed.write_text(json.dumps(papers, indent=1))
 
 
 def parse(pid, structured=True):
